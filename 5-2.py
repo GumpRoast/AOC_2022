@@ -27,12 +27,14 @@ for line in inf:
     fro = fro.strip()
     to = to.strip()
     
-    # append the boxes in their original order 
+    # append the boxes in their original order, build the popped boxes list
     for i in range(int(repeat)):
         box = start[int(fro)].pop()
         pop.append(box)
+    
     # Preserve the order of the popped boxes
     pop.reverse()
+    
     # dont append a new list to the list, append the item in the list only
     for item in pop:
         start[int(to)].append(item)
