@@ -15,7 +15,7 @@ for i in range(len(inf)):
         for item in inf[i]:
             if item in inf[i+1] and item in inf[i+2]:
                 store = item
-                print(store)
+                # print(store)
                 break
         if store.isupper():
             # print(ord(store) - 38)
